@@ -5,7 +5,7 @@ defmodule Floki.Mixfile do
   @version "0.13.1"
 
   def project do
-    [app: false,
+    [app: :floki,
      name: "Floki",
      version: @version,
      description: @description,
@@ -22,7 +22,7 @@ defmodule Floki.Mixfile do
 
   defp deps do
     [
-      {:mochiweb_html, git: "https://github.com/mendrugory/mochiweb_html.git", override: true},
+      {:mochiweb_html, git: "https://github.com/mendrugory/mochiweb_html.git", override: true, app: false},
       {:earmark, "~> 1.0", only: :dev},
       {:ex_doc, "~> 0.14", only: :dev},
       {:credo,">= 0.0.0", only: [:dev, :test]},
