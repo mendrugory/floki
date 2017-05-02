@@ -5,7 +5,7 @@ defmodule Floki.Mixfile do
   @version "0.13.1"
 
   def project do
-    [app: :floki,
+    [app: false,
      name: "Floki",
      version: @version,
      description: @description,
